@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581ad7d10e4073248ac5275f32c7a0af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBullet: {fileID: 4907328535051969471, guid: d5872bae0d267914790d6cf3df9fae40, type: 3}
 --- !u!1 &1417294177792440842
 GameObject:
   m_ObjectHideFlags: 0

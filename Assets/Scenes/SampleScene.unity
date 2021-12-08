@@ -484,6 +484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 7961298929936801161, guid: d5bd97e5adbbb9041b39697fa8737d6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5bd97e5adbbb9041b39697fa8737d6b, type: 3}
 --- !u!1001 &6619379222779505394
@@ -499,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6619379224026164052, guid: c80859d5e40427845919184564e36c08, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6619379224026164062, guid: c80859d5e40427845919184564e36c08, type: 3}
       propertyPath: m_RootOrder

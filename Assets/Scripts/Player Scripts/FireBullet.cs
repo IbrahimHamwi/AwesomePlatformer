@@ -31,7 +31,7 @@ public class FireBullet : MonoBehaviour
         if (canMove)
         {
             Vector3 temp = transform.position;
-            temp.x = speed * Time.deltaTime;
+            temp.x += speed * Time.deltaTime;
             transform.position = temp;
         }
     }
@@ -58,7 +58,7 @@ public class FireBullet : MonoBehaviour
         {
             anim.Play("Explode");
             canMove = false;
-            StartCoroutine(DisableBullet(0.1f));
+            StartCoroutine(DisableBullet(0.3f));
         }
     }
 }

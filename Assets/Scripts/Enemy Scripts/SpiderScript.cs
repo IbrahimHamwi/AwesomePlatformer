@@ -18,7 +18,7 @@ public class SpiderScript : MonoBehaviour
     }
     void Start()
     {
-        
+        StartCoroutine(coroutine_Name);
     }
 
     // Update is called once per frame
@@ -44,6 +44,24 @@ public class SpiderScript : MonoBehaviour
         {
             moveDirection = Vector3.down;
         }
-        StartCoroutine(ChangeMovement());
+        StartCoroutine(coroutine_Name);
     }
+    IEnumerator SpiderDead()
+    {
+        yield return new WaitForSeconds(3f);
+        gameObject.SetActive(false);
+    }
+    private void OnTriggerEnter2D(Collider2D target)
+    {
+        if (target.tag == MyTags.BULLET_TAG)
+        {
+            anim.Play("SpiderDead");
+
+            myBody.bodyType = RigidbodyType2D.Dynamic;
+
+            StartCoroutine(SpiderDead());
+            StopCoroutine(coroutine_Name);
+        }
+    }
+
 }
